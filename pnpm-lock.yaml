@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@sveltejs/adapter-node': next
   '@sveltejs/adapter-static': ^1.0.0-next.7
+  '@sveltejs/adapter-vercel': ^1.0.0-next.15
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^4.22.0
   '@typescript-eslint/parser': ^4.22.0
@@ -21,6 +22,7 @@ specifiers:
 devDependencies:
   '@sveltejs/adapter-node': 1.0.0-next.17
   '@sveltejs/adapter-static': 1.0.0-next.7
+  '@sveltejs/adapter-vercel': 1.0.0-next.15_svelte@3.38.1+vite@2.2.3
   '@sveltejs/kit': 1.0.0-next.94_svelte@3.38.1+vite@2.2.3
   '@typescript-eslint/eslint-plugin': 4.22.0_e3b52a83531895e7febd6ecd5ba813eb
   '@typescript-eslint/parser': 4.22.0_eslint@7.25.0+typescript@4.2.4
@@ -110,6 +112,36 @@ packages:
 
   /@sveltejs/adapter-static/1.0.0-next.7:
     resolution: {integrity: sha512-kIghJ2PoAPW6x8r5f+q8JTeB0EmBtl0Jl7wDB2HfsBCcdtNmdRqVgMcpfhSstpz1VGVDOuaU8rGlHL+XBAMMKQ==}
+    dev: true
+
+  /@sveltejs/adapter-vercel/1.0.0-next.15_svelte@3.38.1+vite@2.2.3:
+    resolution: {integrity: sha512-Fb85t1fktFP46HZEjmlF/TN9k95grger27FpvsKaNXSz1VTdKS8Sbq3l5hROetkRIgXzAfOb8FlJyLVpz9Go1g==}
+    dependencies:
+      '@sveltejs/kit': 1.0.0-next.91_svelte@3.38.1+vite@2.2.3
+      esbuild: 0.11.17
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - svelte
+      - vite
+    dev: true
+
+  /@sveltejs/kit/1.0.0-next.91_svelte@3.38.1+vite@2.2.3:
+    resolution: {integrity: sha512-o2wjAnCMhpDNedyczQWwVQMRYRFhobTXQzBLpSentZXJjmImcdjI6InYXBe8wkilrpqHWxBqyc3VmbtBqXmxAA==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.32.1
+      vite: ^2.2.3
+    dependencies:
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.9_svelte@3.38.1+vite@2.2.3
+      cheap-watch: 1.0.3
+      sade: 1.7.4
+      svelte: 3.38.1
+      vite: 2.2.3
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@sveltejs/kit/1.0.0-next.94_svelte@3.38.1+vite@2.2.3:
@@ -515,6 +547,12 @@ packages:
     engines: {node: '>=8.6'}
     dependencies:
       ansi-colors: 4.1.1
+    dev: true
+
+  /esbuild/0.11.17:
+    resolution: {integrity: sha512-Yj+rQATpLLU36ymg0/laLXn9FUoiGUl7mDPUJ0toQ5nXKFrj/rmIEkQ34T1GeiV2cP2SrT0G0s7xiNuDcsIyBg==}
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /esbuild/0.9.7:
