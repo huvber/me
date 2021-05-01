@@ -1,4 +1,84 @@
 :root {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-		'Open Sans', 'Helvetica Neue', sans-serif;
+  --border-size: 6px;
+  --white-border: inset 0px 0px 8px #000014, 0px 0px 0px 3px #8c9095, 0 0 0 8px #dcdcdf,
+    0 0 0 9px #393939;
+  --main-color: #f5f5f5;
+  --link-color: #d8ca01;
+  --secondary-color: #1bf2dc;
+  --hover-color: #6b6c6b;
+  --breakpoint-mobile: 680px;
+}
+
+*,
+* > *,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+html {
+  background-color: #000014;
+  margin: 0;
+  padding: 0;
+}
+@keyframes acursors {
+  from {
+    left: -2.3rem;
+  }
+  to {
+    left: -3.5rem;
+  }
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  cursor: none;
+  &:hover,
+  &:focus {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0px;
+      left: -3rem;
+      z-index: 2;
+      animation: 500ms ease-out infinite alternate acursors;
+      content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAA20lEQVRIic2WQQ7EIAhFe3S8HVxKZtHUsYiCSjtDQuKm8vgfSY/DiJQSdxOgnK17lmMIUOWjhQESWxEOIjtkZs4GAEQAnN7aHRNRk4jf87JldcezAHXeLPQAaJKvhrRKs64BiQQohQdDUwBkwUvCp+OqMwYYteCJwedExKgBeC+wQr4KdUhBsSASwHolsD8DLeH0Hogewr8D8K1eJ4A5EnkTIOd1BXqr+DUFQgBqBYiICdFNcC4WnP8v6Ckwa8V05xJAXuAFWZa+BoAE9w0FLwJIJWRaK3W78K8BPqRLsOkjVOTyAAAAAElFTkSuQmCC');
+    }
+    color: var(--hover-color);
+  }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0.5rem;
+}
+body {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  height: calc(100vh - var(--border-size) * 2);
+  overflow: auto;
+  max-width: calc(100% - var(--border-size) * 2.5);
+  margin: 6px auto;
+  color: var(--main-color);
+  text-shadow: 2px 2px 2px #000014;
+  border-radius: var(--border-size);
+  box-shadow: var(--white-border);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 17, 1) 0%,
+    rgba(0, 0, 207, 1) 11%,
+    rgba(80, 80, 207, 1) 100%
+  );
+  @media (min-width: 640px) {
+    font-size: 16px;
+    max-width: 35rem;
+  }
 }
