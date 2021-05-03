@@ -88,4 +88,9 @@ body {
     font-size: 16px;
     max-width: 35rem;
   }
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
 }
