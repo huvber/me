@@ -8,6 +8,10 @@
   --hover-color: #6b6c6b;
   --breakpoint-mobile: 680px;
 }
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('/PressStart2P-Regular.ttf');
+}
 
 *,
 * > *,
@@ -24,6 +28,8 @@ html {
   background-color: #000014;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  overflow: auto;
 }
 @keyframes acursors {
   from {
@@ -61,8 +67,9 @@ h6 {
   padding: 0.5rem;
 }
 body {
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'PressStart2P', monospace;
   font-size: 14px;
+  line-height: 1.6rem;
   height: calc(100vh - var(--border-size) * 2);
   overflow: auto;
   max-width: calc(100% - var(--border-size) * 2.5);
