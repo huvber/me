@@ -1,13 +1,7 @@
-<script>
-  import Box from '../components/box.svelte';
-</script>
-
-<style>
-</style>
-
 <svelte:head>
   <title>Huvber website</title>
 </svelte:head>
+
 <p>Hi,</p>
 <p>I'm Andrea and this is my website.</p>
 <p>
@@ -20,5 +14,7 @@
 </p>
 <p>I hope you will enjoy!</p>
 <br />
-<em>PS: I'm huge fan of FFVI, for this reason this website is a tribute to its menu. I hope
-  SquareEnix would appreciate that.</em>
+<em>
+  PS: I'm huge fan of FFVI, for this reason this website is a tribute to its menu. I hope SquareEnix
+  would appreciate that.
+</em>
